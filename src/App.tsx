@@ -14,16 +14,6 @@ import {
 } from "@mui/material";
 import InputFields from './Components/InputFields';
 
-interface CoinData {
-  id: string;
-  name: string;
-  amount: number;
-}
-
-interface PriceData {
-  close: number;
-}
-
 const CoinRow: React.FC<CoinData> = ({ id, name, amount }) => {
   const [closePrice, setClosePrice] = useState<number | null>(null);
   const priceCellRef = useRef<HTMLTableCellElement | null>(null);
