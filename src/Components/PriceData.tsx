@@ -1,3 +1,0 @@
-interface PriceData {
-    close: number;
-  }
